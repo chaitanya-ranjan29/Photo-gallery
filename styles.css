@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+#main {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    /* margin: 20px; */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    /* position: fixed; */
+}
+
+.cards {
+   max-width: 300px;
+   max-height: 300px;
+}
+
+.card-img {
+    padding: 5px;
+    width: 240px;
+    height: inherit;
+}
+
+.card-caption {
+    width: 240px;
+    padding: 5px;
+    /* height: 280px; */
+    text-align: center;
+}
+
+.card-img img {
+    width: 200px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-img img:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.display-image {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+
+.display-image img {
+    /* display: none; */
+    /* position: absolute; */
+    z-index: 2;
+    top: inherit;
+    left: auto;
+    width: 400px;
+    height: 680px;
+    object-fit: cover;
+    object-position: center;
+}
